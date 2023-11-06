@@ -1,0 +1,408 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* vertical-align: middle; */
+    display: block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 背景 */
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.w11_bg1 {
+    background-image: url(../images/w11/bg_01.jpg);
+}
+
+.w11_bg2 {
+    background-image: url(../images/w11/bg_02.jpg);
+}
+
+.bg1 {
+    background-image: url(../images/BG/bg_01.jpg);
+}
+
+.bg2 {
+    background-image: url(../images/BG/bg_02.jpg);
+}
+
+.bg3 {
+    background-image: url(../images/BG/bg_03.jpg);
+}
+
+.bg4 {
+    background-image: url(../images/BG/bg_04.jpg);
+}
+
+.bg5 {
+    background-image: url(../images/BG/bg_05.jpg);
+}
+
+.bg6 {
+    background-image: url(../images/BG/bg_06.jpg);
+}
+
+.bg7 {
+    background-image: url(../images/BG/bg_07.jpg);
+}
+
+.bg8 {
+    background-image: url(../images/BG/bg_08.jpg);
+}
+
+.bg9 {
+    background-image: url(../images/BG/bg_09.jpg);
+}
+
+.bg10 {
+    background-image: url(../images/BG/bg_10.jpg);
+}
+
+.bg11 {
+    background-image: url(../images/BG/bg_11.jpg);
+}
+
+.bg12 {
+    background-image: url(../images/BG/bg_12.jpg);
+}
+
+.bg13 {
+    background-image: url(../images/BG/bg_13.jpg);
+}
+
+.bg14 {
+    background-image: url(../images/BG/bg_14.jpg);
+}
+
+.offerBG1 {
+    background-image: url(../images/offer/offer01.jpg);
+}
+
+.offerBG2 {
+    background-image: url(../images/offer/offer02.jpg);
+}
+
+.offerBG3 {
+    background-image: url(../images/offer/offer03.jpg);
+}
+
+.offerBG4 {
+    background-image: url(../images/offer/offer04.jpg);
+}
+
+/* 定位 */
+.thing_W11_02-1 {
+    width: 36.1%;
+    right: 11%;
+    bottom: 5%;
+    z-index: 1;
+}
+.thing_W11_02-2 {
+    width: 18.8%;
+    right: 7%;
+    bottom: 1.5%;
+    mix-blend-mode: multiply;
+}
+
+.thing_W11_02-3 {
+    width: 9%;
+    left: 10%;
+    bottom: 6%;
+}
+.thing02-1 {
+    width: 30.2%;
+    right: 6%;
+    bottom: 7%;
+    z-index: 1;
+}
+.thing02-2 {
+    width: 15%;
+    right: 21%;
+    bottom: 3%;
+    mix-blend-mode: multiply;
+}
+
+.thing02-3 {
+    width: 37.1%;
+    left: 6%;
+    bottom: 8%;
+}
+
+.thing03-1 {
+    width: 68.6%;
+    left: 10%;
+    top: 28%;
+}
+
+.thing03-2 {
+    width: 65.7%;
+    left: 23%;
+    top: 48%;
+}
+
+.thing03-3 {
+    width: 68%;
+    left: 13%;
+    top: 66%;
+}
+
+.thing03-4 {
+    width: 66.2%;
+    left: 15.5%;
+    bottom: 8%;
+}
+
+.thing04-1 {
+    width: 70.7%;
+    left: 15%;
+    bottom: 18.5%;
+}
+
+.thing05-1 {
+    width: 80.8%;
+    left: 10%;
+    top: -3%;
+}
+
+.thing05-2 {
+    width: 32.7%;
+    left: 4.55%;
+    top: 9.5%;
+}
+
+.thing05-3 {
+    width: 35.7%;
+    left: 35%;
+    top: 20.5%;
+}
+
+.thing05-4 {
+    width: 38.6%;
+    right: -2%;
+    top: 11.75%;
+}
+
+.thing5-5 {
+    width: 22.4%;
+    left: 8%;
+    top: 26.5%;
+}
+
+.thing5-6 {
+    width: 22.4%;
+    left: 39%;
+    top: 42%;
+}
+
+.thing5-7 {
+    width: 22.4%;
+    right: 6%;
+    top: 31.5%;
+}
+
+.thing06-1 {
+    width: 95%;
+    height: 53%;
+    left: 2.5%;
+    top: 31.8%;
+}
+
+.thing07-1 {
+    width: 31.4%;
+    right: 7%;
+    top: 10.5%;
+    animation: move 2s infinite ease-in-out;
+}
+
+.thing07-2 {
+    width: 31.4%;
+    left: 4.5%;
+    top: 30.5%;
+    animation: move 2s 0.5s infinite ease-in-out;
+}
+
+.thing07-3 {
+    width: 31.4%;
+    left: 22.5%;
+    bottom: 12%;
+    animation: move 2s 1s infinite ease-in-out;
+}
+
+.thing08-1 {
+    width: 10.8%;
+    left: 28.5%;
+    bottom: 26.25%;
+}
+
+.thing08-2 {
+    width: 10.8%;
+    left: 47%;
+    bottom: 26.25%;
+}
+
+.thing09-1 {
+    width: 23%;
+    left: 11%;
+    top: 33.5%;
+    animation: move 2s infinite ease-in-out;
+}
+
+.thing09-2 {
+    width: 23%;
+    right: 11.5%;
+    top: 33.5%;
+    animation: move 2s 0.25s infinite ease-in-out;
+}
+
+.thing09-3 {
+    width: 23%;
+    left: 11%;
+    bottom: 38%;
+    animation: move 2s 0.5s infinite ease-in-out;
+}
+
+.thing09-4 {
+    width: 23%;
+    right: 11.5%;
+    bottom: 38%;
+    animation: move 2s 0.75s infinite ease-in-out;
+}
+
+.thing09-5 {
+    width: 14.4%;
+    left: 14.5%;
+    bottom: 8.3%;
+}
+
+.thing09-6 {
+    width: 14.4%;
+    left: 42.5%;
+    bottom: 8.3%;
+}
+
+.thing09-7 {
+    width: 14.4%;
+    right: 14.5%;
+    bottom: 8.3%;
+}
+
+.thing11-0 {
+    width: 16.1%;
+    left: 16%;
+    top: 22%;
+    z-index: 3;
+}
+
+.thing11-1 {
+    width: 90%;
+    right: 5%;
+    bottom: -5%;
+}
+
+.thing13-1 {
+    width: 90.6%;
+    left: 5%;
+    top: 9%;
+}
+
+.mail {
+    width: 100%;
+    height: 25%;
+    left: 0%;
+    bottom: 47%;
+}
+
+/* offer */
+.moreBtn {
+    cursor: pointer;
+}
+
+.offerBtn {
+    transition: all 0.3s;
+}
+
+.offerBtn:hover {
+    transform: translateY(10px);
+    opacity: 0.5;
+}
+
+.offer01 {
+    width: 38.3%;
+    left: 7%;
+    bottom: 2%;
+}
+
+.offer02 {
+    width: 38.3%;
+    right: 7%;
+    bottom: 2%;
+}
+
+.offer03 {
+    width: 47.3%;
+    left: 8%;
+    bottom: 7%;
+}
+
+.offer04 {
+    width: 34.6%;
+    left: 9.5%;
+    bottom: 3%;
+}
+
+.offer05 {
+    width: 34.6%;
+    right: 9.5%;
+    bottom: 3%;
+}
+
+.offer06 {
+    width: 51.5%;
+    right: 8%;
+    bottom: 18.5%;
+}

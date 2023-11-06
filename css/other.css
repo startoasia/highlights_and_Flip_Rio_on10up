@@ -1,0 +1,347 @@
+/* 畫重點 */
+.active {
+    background-position: 0% .1em !important;
+}
+
+.marker {
+    background: -webkit-linear-gradient(left, #F0F0F0 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    background-position: 100% .1em;
+    transition: all 2s ease;
+}
+
+.marker2 {
+    background-color: #000;
+    transition: all 2s ease;
+position: absolute;
+height: 0%;
+width: 100%;
+}
+.marker2-show{
+    height: 100%;
+}
+
+/* 翻牌 */
+.card-container {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 0%;
+    bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-col {
+    width: 33.333%;
+    margin-bottom: 5%;
+    /* margin: 0 auto 5% auto; */
+}
+
+.card {
+
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.card-inner {
+    max-width: 246px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .card-inner {
+        max-width: 100px;
+    }
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 100%;
+}
+
+.card-front {
+    /* background-color: #fb0a0a; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-back {
+    /* background-color: #009dff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+/* .card-back a {
+    text-decoration: none;
+    color: blue;
+} */
+
+.card--active {
+    transform: rotateY(180deg);
+}
+
+
+/* -----------
+    salePOPUp
+----------- */
+.popBG {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0, 0.7);
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.js-xmark {
+    cursor: pointer;
+    font-size: 3rem;
+    position: sticky;
+    text-align: end;
+    display: block;
+    top: 3%;
+    margin-right: 3%;
+    /* right: 8%; */
+    color: #000;
+}
+
+.popSaleContainer {
+    margin-top: -5%;
+}
+
+.popContextContainer {
+    margin-top: -5%;
+}
+
+.popContextContainer img {
+    margin: auto;
+}
+
+
+@media (max-width:768px) {
+    .popSaleContainer {
+        width: 90%;
+        margin: -9% auto 0 auto;
+    }
+
+    .popContextContainer {
+        margin-top: -2.5%;
+        position: absolute;
+        width: 95%;
+        left: 2.5%;
+        top: 0%;
+        /* transform: translateY(-50%); */
+    }
+
+    .js-xmark {
+        font-size: 2rem;
+        top: 1%;
+    }
+
+    .popContextContainer .js-xmark {
+        /* color: #fff; */
+        top: 5%;
+    }
+}
+@media (max-width:380px) {
+    
+    .popContextContainer {
+        margin-top: -8.5%;
+       
+    } .popContextContainer .js-xmark {
+        top: 2.5%;
+    }
+}
+/*-----------
+    POPUp
+-------------*/
+.popControl {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+.popControl--active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popContainer {
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+/* ============ 
+    swiper 
+==============*/
+.swiper-container {
+    width: 100%;
+    /* margin: 40px 0; */
+    padding: 20% 0;
+}
+
+.swiper-slide {
+    opacity: 0.5;
+    overflow: hidden;
+    transition: .7s;
+    filter: blur(1px);
+    position: relative;
+}
+
+/* .swiper-slide::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.7);
+   
+} */
+
+.swiper-slide img {
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+
+.swiper-slide-active {
+    opacity: 1;
+    z-index: 1;
+    filter: blur(0px);
+    transform: scale(1.5);
+}
+
+.swiper-slide-active img {
+    filter: brightness(1);
+}
+
+/* .swiper-slide-active::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+} */
+
+.pagination {
+    width: 100%;
+    /* left: 50%; */
+    /* transform: translateX(-50%) */
+    bottom: 1.5% !important;
+}
+
+.pagination1 {
+    bottom: 10% !important;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    opacity: .3;
+    /* background-color: #979797; */
+    margin: 0 1.5%;
+    border: 3px solid #D6A838;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #D6A838;
+    opacity: 1;
+}
+
+@media (max-width:768px) {
+
+
+    .swiper-slide-active {
+        opacity: 1;
+        z-index: 1;
+        transform: scale(1.05);
+    }
+
+    .pagination {
+
+        bottom: 5% !important;
+    }
+
+    .pagination1 {
+        bottom: 10% !important;
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        border: 1.5px solid #D6A838;
+    }
+}
+
+
+/* 倒數計時 */
+.sticky{
+    position: sticky;
+    max-width: 1920px;
+    margin: 0 auto;
+    top: 0;
+    z-index: 9;
+}
+.clock-container {
+    color: #ffffff;
+    background: #FE0002;
+    /* padding: 0.15em 0; */
+    /* border-radius: 0.1em; */
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#timer {
+    /* border-radius: 1.5px; */
+    font-weight: bold;
+    margin: .5 .5em;
+    padding: 0.15em .5em;
+    letter-spacing: 0.1em;
+    color: #f9f9f9;
+}
+
+@media (max-width:768px) {
+    .clock-container {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:549px) {
+    .clock-container {
+        font-size: 1.15rem;
+    }
+}
